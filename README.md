@@ -74,8 +74,8 @@ npm start
 The frontend will be available at http://localhost:3000.
 
 ### Links
-#### Frontend Application: Deployed Frontend URL
-#### Backend Application: Deployed Backend URL
+#### Frontend Application: [Deployed Frontend URL](https://gametheory-sde-assign.vercel.app/)
+#### Backend Application: [Deployed Backend URL](https://dashboard.render.com/web/srv-cs82k656l47c739cegg0)
 
 ### Assumptions & Limitations
 - Time slots are hourly-based and follow the format: 1 AM - 2 AM.
