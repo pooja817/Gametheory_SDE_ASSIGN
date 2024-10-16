@@ -3,7 +3,16 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import BookingForm from "./BookingForm";
 
-const courts = ["Court 1", "Court 2", "Court 3", "Court 4", "Court 5", "Court 6"];
+const BACKEND_URL = "https://gametheory-sde-assign-backend.onrender.com";
+
+const courts = [
+  "Court 1",
+  "Court 2",
+  "Court 3",
+  "Court 4",
+  "Court 5",
+  "Court 6",
+];
 
 const Schedule = () => {
   const [bookings, setBookings] = useState([]);
@@ -19,7 +28,7 @@ const Schedule = () => {
   const fetchBookings = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3002/api/bookings/view-bookings",
+        BACKEND_URL + "/api/bookings/view-bookings",
         { params: { sportName: sport, date } }
       );
       setBookings(response.data);
@@ -45,7 +54,12 @@ const Schedule = () => {
   }, [isModalOpen]);
 
   const getColorClass = (index) => {
-    const colors = ["bg-green-200", "bg-red-200", "bg-blue-200", "bg-purple-200"];
+    const colors = [
+      "bg-green-200",
+      "bg-red-200",
+      "bg-blue-200",
+      "bg-purple-200",
+    ];
     return colors[index % colors.length];
   };
 
