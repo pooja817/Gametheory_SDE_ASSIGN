@@ -17,6 +17,7 @@ const BookingForm = ({ onClose }) => {
   const [availableCourts, setAvailableCourts] = useState([]);
   const [selectedCourt, setSelectedCourt] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false); // For button state
+  const BACKEND_URL = "https://gametheory-sde-assign-backend.onrender.com";
 
   // Fetch available courts
   const fetchAvailableCourts = async () => {
@@ -27,7 +28,7 @@ const BookingForm = ({ onClose }) => {
 
     try {
       const response = await axios.get(
-        "http://localhost:3002/api/bookings/available-courts",
+        BACKEND_URL + "/api/bookings/available-courts",
         { params: { sportName, date, timeSlot } }
       );
       setAvailableCourts(response.data);
@@ -49,7 +50,7 @@ const BookingForm = ({ onClose }) => {
 
     try {
       setIsSubmitting(true); // Disable button during submission
-      await axios.post("http://localhost:3002/api/bookings", {
+      await axios.post(BACKEND_URL+ "/api/bookings", {
         customerName,
         sportName,
         date,
