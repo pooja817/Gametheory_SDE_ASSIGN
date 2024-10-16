@@ -106,11 +106,6 @@ The frontend will be available at http://localhost:3000.
 - Court Selection Dropdown: Displays available courts based on  the selected slot.
 - Create Booking Button: Activated only when a court is selected.
 
-#### Responsive Design:
-
-- The layout adapts for smaller screens with scrollable grids.
-- Sidebar navigation includes additional sections for better usability.
-
 ## Example Usage
 #### Open the Application:
 - Access the frontend at http://localhost:3000.
