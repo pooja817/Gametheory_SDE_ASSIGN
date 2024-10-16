@@ -20,7 +20,7 @@ Both frontend and backend are integrated to handle data dynamically using APIs.
 
 #### View Bookings
 
-![Alt text](frontend/public/Screenshots/View Bookings.png)
+![Alt text](frontend/public/Screenshots/Create%20Bookings.png)
 
 #### Create Bookings
 ![Create Bookings](frontend/public/Screenshots/Create Bookings.png)
