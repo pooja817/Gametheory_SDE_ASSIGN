@@ -16,7 +16,7 @@ Both frontend and backend are integrated to handle data dynamically using APIs.
 
 ---
 
-### Screenshots
+## Screenshots
 
 #### View Bookings
 
@@ -25,6 +25,10 @@ Both frontend and backend are integrated to handle data dynamically using APIs.
 
 #### Create Bookings
 ![Create Bookings](frontend/public/Screenshots/Create%20Bookings.png)
+
+## Links
+#### Frontend Application: [Deployed Frontend URL](https://gametheory-sde-assign.vercel.app/)
+#### Backend Application: [Deployed Backend URL](https://dashboard.render.com/web/srv-cs82k656l47c739cegg0)
 
 ## Prerequisites
 
@@ -73,17 +77,13 @@ npm start
 ```
 The frontend will be available at http://localhost:3000.
 
-### Links
-#### Frontend Application: [Deployed Frontend URL](https://gametheory-sde-assign.vercel.app/)
-#### Backend Application: [Deployed Backend URL](https://dashboard.render.com/web/srv-cs82k656l47c739cegg0)
-
-### Assumptions & Limitations
+## Assumptions & Limitations
 - Time slots are hourly-based and follow the format: 1 AM - 2 AM.
 - The grid layout can handle up to 6 courts and 24 hours per day.
 - The application assumes simultaneous running of frontend and backend.
 - Availability of courts is fetched dynamically from the backend via APIs.
 
-### Application Features
+## Application Features
 #### Grid with Sticky Time and Court Headers:
 
 - The time column remains fixed while scrolling horizontally.
@@ -111,7 +111,7 @@ The frontend will be available at http://localhost:3000.
 - The layout adapts for smaller screens with scrollable grids.
 - Sidebar navigation includes additional sections for better usability.
 
-### Example Usage
+## Example Usage
 #### Open the Application:
 - Access the frontend at http://localhost:3000.
 #### View the Schedule:
@@ -122,5 +122,5 @@ The frontend will be available at http://localhost:3000.
 2. Fill in the required fields and check for available courts.
 3. Confirm the booking and see it reflect immediately on the schedule grid.
 
-### Conclusion
+## Conclusion
 This Schedule Management Application provides an easy way to manage bookings for multiple sports courts
